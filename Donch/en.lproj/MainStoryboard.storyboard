@@ -454,40 +454,17 @@
     </scenes>
     <resources>
         <image name="Content3@2x.png" width="637" height="790"/>
-        <image name="b1.png" width="16" height="16"/>
-        <image name="b2.png" width="16" height="16"/>
-        <image name="b3.png" width="16" height="16"/>
-        <image name="b4.png" width="16" height="16"/>
+        <image name="b1.png" width="22" height="25"/>
+        <image name="b2.png" width="24" height="22"/>
+        <image name="b3.png" width="25" height="24"/>
+        <image name="b4.png" width="20" height="21"/>
         <image name="bg@2x.png" width="640" height="960"/>
         <image name="clearBtn@2x.png" width="622" height="118"/>
         <image name="countBg@2x.png" width="326" height="137"/>
-        <image name="model1@2x.png" width="639" height="800"/>
+        <image name="model1@2x.png" width="632" height="762"/>
         <image name="switchUI_1@2x.png" width="137" height="53"/>
         <image name="tableViewBg@2x.png" width="622" height="118"/>
     </resources>
-    <classes>
-        <class className="DCCustomNavBar" superclassName="UINavigationBar">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DCCustomNavBar.h"/>
-        </class>
-        <class className="DCHomeTabBarController" superclassName="UITabBarController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DCHomeTabBarController.h"/>
-        </class>
-        <class className="ExerciseViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ExerciseViewController.h"/>
-        </class>
-        <class className="GoalViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GoalViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="RecordViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/RecordViewController.h"/>
-        </class>
-        <class className="SettingsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

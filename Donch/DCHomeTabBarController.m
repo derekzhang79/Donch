@@ -25,10 +25,10 @@
     // Customize UITabBar
     UITabBar *tabBar = self.tabBar;
     UIImage *blank = [UIImage imageNamed:@"blank"];
-//    UIImage *bg = [UIImage imageNamed:@"tabBg@2x"];
+    UIImage *bg = [UIImage imageNamed:@"tabBg"];
     // have to add additional offset to cover item text 420 + 7
     tabBar.frame = CGRectMake(0, 430, 320, 44);
-//    tabBar.backgroundImage = bg;
+    tabBar.backgroundImage = bg;
     tabBar.selectionIndicatorImage = blank;
 //    [self tabBar:self.tabBarController.tabBar didSelectItem:self.tabBarItem];
     
