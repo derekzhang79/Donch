@@ -7,7 +7,7 @@
 //
 
 #import "DCHomeTabBarController.h"
-
+#import "DonchManager.h"
 @interface DCHomeTabBarController ()
 
 @end
@@ -53,7 +53,6 @@
             [tabBarItem setFinishedSelectedImage:settingsSelected withFinishedUnselectedImage:settingsNormal];
         }
     }
-
 }
 
 - (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController

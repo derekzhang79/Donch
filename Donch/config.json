@@ -1,0 +1,23 @@
+{
+    "sampleYoga": [{
+                   "name": "武士式",
+                   "src": "model1",
+                   "status": 0
+                   }, {
+                   "name": "樹姿式",
+                   "src": "model2",
+                   "status": 1
+                   }, {
+                   "name": "半月式",
+                   "src": "model3",
+                   "status": 0
+                   }, {
+                   "name": "拱月式",
+                   "src": "model4",
+                   "status": 0
+                   }, {
+                   "name": "拜日式",
+                   "src": "model5",
+                   "status": 0
+                   }]
+}

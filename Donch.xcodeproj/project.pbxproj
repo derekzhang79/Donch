@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		17C39C2F1668AA0D0065B83B /* DonchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C39C2E1668AA0D0065B83B /* DonchManager.m */; };
 		17C39C331668AA1D0065B83B /* Yoga.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C39C321668AA1D0065B83B /* Yoga.m */; };
+		17C39C451668ADBC0065B83B /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = 17C39C441668ADBC0065B83B /* config.json */; };
 		DD9B40E0166891B300180646 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9B40DF166891B300180646 /* UIKit.framework */; };
 		DD9B40E2166891B300180646 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9B40E1166891B300180646 /* Foundation.framework */; };
 		DD9B40E4166891B300180646 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9B40E3166891B300180646 /* CoreGraphics.framework */; };
@@ -65,6 +66,7 @@
 		17C39C2E1668AA0D0065B83B /* DonchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DonchManager.m; sourceTree = "<group>"; };
 		17C39C311668AA1D0065B83B /* Yoga.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Yoga.h; sourceTree = "<group>"; };
 		17C39C321668AA1D0065B83B /* Yoga.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Yoga.m; sourceTree = "<group>"; };
+		17C39C441668ADBC0065B83B /* config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
 		DD9B40DB166891B300180646 /* Donch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Donch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9B40DF166891B300180646 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DD9B40E1166891B300180646 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -199,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				DD9B4112166897C100180646 /* Art */,
+				17C39C441668ADBC0065B83B /* config.json */,
 				DD9B40E7166891B300180646 /* Donch-Info.plist */,
 				DD9B40E8166891B300180646 /* InfoPlist.strings */,
 				DD9B40EB166891B300180646 /* main.m */,
@@ -421,6 +424,7 @@
 				DDC8AF571668A7AB00EFEC5F /* switchUI_1.png in Resources */,
 				DDC8AF581668A7AB00EFEC5F /* switchUI_2.png in Resources */,
 				DDC8AF5A1668A81E00EFEC5F /* blank.png in Resources */,
+				17C39C451668ADBC0065B83B /* config.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

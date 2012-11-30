@@ -12,9 +12,11 @@
 
 + (DonchManager *) getInstance;
 
+- (NSArray *) listAllYoga;
+
 - (BOOL) cleanYogaStatus;
 
 - (BOOL) updateYogaStatusWithIndex: (NSInteger) index;
 
-@property(retain, nonatomic) NSArray *yogaList;
+@property(retain, nonatomic) NSMutableArray *yogaList;
 @end

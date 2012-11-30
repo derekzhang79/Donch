@@ -11,4 +11,9 @@
 @implementation Yoga
 @synthesize name, imageName, status;
 
+//For print out
+- (NSString *)description {
+    return [NSString stringWithFormat:@"Yoga : <%@, %@, %@>", name, imageName, status ? @"YES" : @"NO"];
+}
+
 @end
