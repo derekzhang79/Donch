@@ -9,11 +9,11 @@
 #import "Yoga.h"
 
 @implementation Yoga
-@synthesize name, imageName, status;
+@synthesize name, imageName, minutes, status;
 
 //For print out
 - (NSString *)description {
-    return [NSString stringWithFormat:@"Yoga : <%@, %@, %@>", name, imageName, status ? @"YES" : @"NO"];
+    return [NSString stringWithFormat:@"Yoga : <%@, %@, %@, %@>", name, imageName, minutes, status ? @"YES" : @"NO"];
 }
 
 @end
