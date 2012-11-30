@@ -12,14 +12,14 @@
                         <rect key="frame" x="0.0" y="44" width="320" height="387"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="eRh-fA-YNh" userLabel="bg"/>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="model1.png" translatesAutoresizingMaskIntoConstraints="NO" id="mHW-1A-3Jh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="eRh-fA-YNh" userLabel="bg"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="model1@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="mHW-1A-3Jh">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="Exv-sU-W6Y"/>
                                     <constraint firstAttribute="height" constant="400" id="fpZ-1Z-2PE"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="countBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="0KL-55-u8p">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="countBg@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="0KL-55-u8p">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="163" id="YQw-j5-gW4"/>
                                     <constraint firstAttribute="height" constant="69" id="iMZ-ny-4hV"/>
@@ -62,7 +62,7 @@
                         <rect key="frame" x="0.0" y="44" width="320" height="387"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="mh1-U9-hSN"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="mh1-U9-hSN"/>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="目標完成計劃" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V79-rY-8zO">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="VLx-UI-Tg1"/>
@@ -83,7 +83,7 @@
                             <constraint firstItem="mh1-U9-hSN" firstAttribute="bottom" secondItem="8tj-nL-72O" secondAttribute="bottom" type="default" id="zxT-n5-Xko"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="紀錄" image="b2.png" id="6"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="紀錄" image="b2.png" id="6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
             </objects>
@@ -97,7 +97,7 @@
                         <rect key="frame" x="0.0" y="44" width="320" height="387"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="HU2-ds-wml"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="HU2-ds-wml"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -107,7 +107,7 @@
                             <constraint firstItem="HU2-ds-wml" firstAttribute="trailing" secondItem="lqM-a9-sbU" secondAttribute="trailing" type="default" id="rks-Ld-YQd"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="目標" image="b3.png" id="yim-6u-XYH"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="目標" image="b3.png" id="yim-6u-XYH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MbM-de-KZz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -121,7 +121,7 @@
                         <rect key="frame" x="0.0" y="44" width="320" height="387"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kvv-0S-cOS"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kvv-0S-cOS"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -131,16 +131,16 @@
                             <constraint firstItem="Kvv-0S-cOS" firstAttribute="bottom" secondItem="ERy-2p-mTf" secondAttribute="bottom" type="default" id="mE4-7R-6as"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="設定" image="b4.png" id="c1a-Xi-XzE"/>
+                    <tabBarItem key="tabBarItem" tag="3" title="設定" image="b4.png" id="c1a-Xi-XzE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lnt-Cs-Gmq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="659" y="1888"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Home Tab Bar Controller-->
         <scene sceneID="15">
             <objects>
-                <tabBarController id="4" sceneMemberID="viewController">
+                <tabBarController id="4" customClass="DCHomeTabBarController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="cPd-x8-yGp"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="5">
@@ -177,22 +177,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="b1.png" width="44" height="49"/>
-        <image name="b2.png" width="47" height="44"/>
-        <image name="b3.png" width="50" height="48"/>
-        <image name="b4.png" width="40" height="41"/>
-        <image name="bg.png" width="640" height="960"/>
-        <image name="countBg.png" width="326" height="137"/>
-        <image name="model1.png" width="639" height="800"/>
+        <image name="b1.png" width="16" height="16"/>
+        <image name="b2.png" width="16" height="16"/>
+        <image name="b3.png" width="16" height="16"/>
+        <image name="b4.png" width="16" height="16"/>
+        <image name="bg@2x.png" width="640" height="960"/>
+        <image name="countBg@2x.png" width="326" height="137"/>
+        <image name="model1@2x.png" width="639" height="800"/>
     </resources>
-    <classes>
-        <class className="DCCustomNavBar" superclassName="UINavigationBar">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DCCustomNavBar.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
