@@ -10,23 +10,18 @@
 
 @protocol DCCustomAlertDelegate;
 
-@interface DCCustomAlert : UIView {
-    CGPoint lastTouchLocation;
-}
+@interface DCCustomAlert : UIView
+
 @property (nonatomic) id<DCCustomAlertDelegate> delegate;
 @property (nonatomic) BOOL isShown;
 @property (nonatomic) UIImageView *alertView;
-@property (nonatomic) NSString *alertTag;
 
 - (void)show;
 - (void)hide: (id)sender;
-- (id)initWithTitle:(NSString *)title
-            message:(NSString *)message
-           delegate:(id <DCCustomAlertDelegate>)delegate
-    okayButtonTitle:(NSString *)okayButtonTitle
-  cancelButtonTitle:(NSString *)cancelButtonTitle
-    alertBackground:(NSString *)alertBackground
-           alertTag:(NSString *)tag;
+- (id)initWIthMessageImage:(UIImage *) messageImage
+                  delegate:(id <DCCustomAlertDelegate>) alertDelegate
+           okayButtonImage:(UIImage *) okayButtonImage
+         cancelButtonTitle:(UIImage *) cancelButtonImage;
 
 @end
 
