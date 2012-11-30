@@ -318,6 +318,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clearAllRecord:" destination="RNC-qT-yzd" eventType="touchUpInside" id="H75-wo-fif"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AuC-fQ-ybb">
                                 <constraints>
@@ -498,6 +501,13 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" tag="3" title="設定" image="b4.png" id="c1a-Xi-XzE"/>
+                    <connections>
+                        <outlet property="settingsSwitch0" destination="W0s-u2-krN" id="8R4-VV-eMc"/>
+                        <outlet property="settingsSwitch1" destination="Njf-Kn-nUt" id="pfx-ot-1y2"/>
+                        <outlet property="settingsSwitch2" destination="lfX-wa-ieW" id="hyk-G3-vLc"/>
+                        <outlet property="settingsSwitch3" destination="sha-sV-wGL" id="nlM-Pt-oA9"/>
+                        <outlet property="settingsSwitch4" destination="rVp-aD-IMM" id="2oh-Yf-Jk1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lnt-Cs-Gmq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -558,29 +568,6 @@
         <image name="tableViewTarget1.png" width="57" height="48"/>
         <image name="tableViewTarget2.png" width="57" height="48"/>
     </resources>
-    <classes>
-        <class className="DCCustomNavBar" superclassName="UINavigationBar">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DCCustomNavBar.h"/>
-        </class>
-        <class className="DCHomeTabBarController" superclassName="UITabBarController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DCHomeTabBarController.h"/>
-        </class>
-        <class className="ExerciseViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ExerciseViewController.h"/>
-        </class>
-        <class className="GoalViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GoalViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="RecordViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/RecordViewController.h"/>
-        </class>
-        <class className="SettingsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
