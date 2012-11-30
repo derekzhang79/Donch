@@ -42,22 +42,22 @@
 		DDC8AF301668A78F00EFEC5F /* model3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF2C1668A78F00EFEC5F /* model3@2x.png */; };
 		DDC8AF311668A78F00EFEC5F /* model4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF2D1668A78F00EFEC5F /* model4@2x.png */; };
 		DDC8AF321668A78F00EFEC5F /* model5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF2E1668A78F00EFEC5F /* model5@2x.png */; };
-		DDC8AF3A1668A7A100EFEC5F /* tableViewBg.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF351668A7A100EFEC5F /* tableViewBg.png */; };
-		DDC8AF3B1668A7A100EFEC5F /* tableViewItem.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF361668A7A100EFEC5F /* tableViewItem.png */; };
-		DDC8AF3C1668A7A100EFEC5F /* tableViewTarget1.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF371668A7A100EFEC5F /* tableViewTarget1.png */; };
-		DDC8AF3D1668A7A100EFEC5F /* tableViewTarget2.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF381668A7A100EFEC5F /* tableViewTarget2.png */; };
-		DDC8AF3E1668A7A100EFEC5F /* 目標完成計畫.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF391668A7A100EFEC5F /* 目標完成計畫.png */; };
-		DDC8AF411668A7A600EFEC5F /* Content3.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF401668A7A600EFEC5F /* Content3.png */; };
-		DDC8AF4F1668A7AB00EFEC5F /* clearBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF431668A7AB00EFEC5F /* clearBtn.png */; };
-		DDC8AF501668A7AB00EFEC5F /* clearBtn_includeTxt.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF441668A7AB00EFEC5F /* clearBtn_includeTxt.png */; };
-		DDC8AF511668A7AB00EFEC5F /* switch_inside_1.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF471668A7AB00EFEC5F /* switch_inside_1.png */; };
-		DDC8AF521668A7AB00EFEC5F /* switch_inside_2.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF481668A7AB00EFEC5F /* switch_inside_2.png */; };
-		DDC8AF531668A7AB00EFEC5F /* switchButton.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF491668A7AB00EFEC5F /* switchButton.png */; };
-		DDC8AF541668A7AB00EFEC5F /* switchOutside.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF4A1668A7AB00EFEC5F /* switchOutside.png */; };
-		DDC8AF551668A7AB00EFEC5F /* 否.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF4B1668A7AB00EFEC5F /* 否.png */; };
-		DDC8AF561668A7AB00EFEC5F /* 是.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF4C1668A7AB00EFEC5F /* 是.png */; };
-		DDC8AF571668A7AB00EFEC5F /* switchUI_1.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF4D1668A7AB00EFEC5F /* switchUI_1.png */; };
-		DDC8AF581668A7AB00EFEC5F /* switchUI_2.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF4E1668A7AB00EFEC5F /* switchUI_2.png */; };
+		DDC8AF3A1668A7A100EFEC5F /* tableViewBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF351668A7A100EFEC5F /* tableViewBg@2x.png */; };
+		DDC8AF3B1668A7A100EFEC5F /* tableViewItem@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF361668A7A100EFEC5F /* tableViewItem@2x.png */; };
+		DDC8AF3C1668A7A100EFEC5F /* tableViewTarget1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF371668A7A100EFEC5F /* tableViewTarget1@2x.png */; };
+		DDC8AF3D1668A7A100EFEC5F /* tableViewTarget2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF381668A7A100EFEC5F /* tableViewTarget2@2x.png */; };
+		DDC8AF3E1668A7A100EFEC5F /* 目標完成計畫@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF391668A7A100EFEC5F /* 目標完成計畫@2x.png */; };
+		DDC8AF411668A7A600EFEC5F /* Content3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF401668A7A600EFEC5F /* Content3@2x.png */; };
+		DDC8AF4F1668A7AB00EFEC5F /* clearBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF431668A7AB00EFEC5F /* clearBtn@2x.png */; };
+		DDC8AF501668A7AB00EFEC5F /* clearBtn_includeTxt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF441668A7AB00EFEC5F /* clearBtn_includeTxt@2x.png */; };
+		DDC8AF511668A7AB00EFEC5F /* switch_inside_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF471668A7AB00EFEC5F /* switch_inside_1@2x.png */; };
+		DDC8AF521668A7AB00EFEC5F /* switch_inside_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF481668A7AB00EFEC5F /* switch_inside_2@2x.png */; };
+		DDC8AF531668A7AB00EFEC5F /* switchButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF491668A7AB00EFEC5F /* switchButton@2x.png */; };
+		DDC8AF541668A7AB00EFEC5F /* switchOutside@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF4A1668A7AB00EFEC5F /* switchOutside@2x.png */; };
+		DDC8AF551668A7AB00EFEC5F /* 否@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF4B1668A7AB00EFEC5F /* 否@2x.png */; };
+		DDC8AF561668A7AB00EFEC5F /* 是@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF4C1668A7AB00EFEC5F /* 是@2x.png */; };
+		DDC8AF571668A7AB00EFEC5F /* switchUI_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF4D1668A7AB00EFEC5F /* switchUI_1@2x.png */; };
+		DDC8AF581668A7AB00EFEC5F /* switchUI_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF4E1668A7AB00EFEC5F /* switchUI_2@2x.png */; };
 		DDC8AF5A1668A81E00EFEC5F /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF591668A81E00EFEC5F /* blank.png */; };
 		DDC8AF681668B85000EFEC5F /* ExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC8AF671668B85000EFEC5F /* ExerciseViewController.m */; };
 		DDC8AF6B1668B87A00EFEC5F /* GoalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC8AF6A1668B87A00EFEC5F /* GoalViewController.m */; };
@@ -109,22 +109,22 @@
 		DDC8AF2C1668A78F00EFEC5F /* model3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "model3@2x.png"; sourceTree = "<group>"; };
 		DDC8AF2D1668A78F00EFEC5F /* model4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "model4@2x.png"; sourceTree = "<group>"; };
 		DDC8AF2E1668A78F00EFEC5F /* model5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "model5@2x.png"; sourceTree = "<group>"; };
-		DDC8AF351668A7A100EFEC5F /* tableViewBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tableViewBg.png; sourceTree = "<group>"; };
-		DDC8AF361668A7A100EFEC5F /* tableViewItem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tableViewItem.png; sourceTree = "<group>"; };
-		DDC8AF371668A7A100EFEC5F /* tableViewTarget1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tableViewTarget1.png; sourceTree = "<group>"; };
-		DDC8AF381668A7A100EFEC5F /* tableViewTarget2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tableViewTarget2.png; sourceTree = "<group>"; };
-		DDC8AF391668A7A100EFEC5F /* 目標完成計畫.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "目標完成計畫.png"; sourceTree = "<group>"; };
-		DDC8AF401668A7A600EFEC5F /* Content3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Content3.png; sourceTree = "<group>"; };
-		DDC8AF431668A7AB00EFEC5F /* clearBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clearBtn.png; sourceTree = "<group>"; };
-		DDC8AF441668A7AB00EFEC5F /* clearBtn_includeTxt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clearBtn_includeTxt.png; sourceTree = "<group>"; };
-		DDC8AF471668A7AB00EFEC5F /* switch_inside_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switch_inside_1.png; sourceTree = "<group>"; };
-		DDC8AF481668A7AB00EFEC5F /* switch_inside_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switch_inside_2.png; sourceTree = "<group>"; };
-		DDC8AF491668A7AB00EFEC5F /* switchButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchButton.png; sourceTree = "<group>"; };
-		DDC8AF4A1668A7AB00EFEC5F /* switchOutside.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchOutside.png; sourceTree = "<group>"; };
-		DDC8AF4B1668A7AB00EFEC5F /* 否.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "否.png"; sourceTree = "<group>"; };
-		DDC8AF4C1668A7AB00EFEC5F /* 是.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "是.png"; sourceTree = "<group>"; };
-		DDC8AF4D1668A7AB00EFEC5F /* switchUI_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchUI_1.png; sourceTree = "<group>"; };
-		DDC8AF4E1668A7AB00EFEC5F /* switchUI_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchUI_2.png; sourceTree = "<group>"; };
+		DDC8AF351668A7A100EFEC5F /* tableViewBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableViewBg@2x.png"; sourceTree = "<group>"; };
+		DDC8AF361668A7A100EFEC5F /* tableViewItem@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableViewItem@2x.png"; sourceTree = "<group>"; };
+		DDC8AF371668A7A100EFEC5F /* tableViewTarget1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableViewTarget1@2x.png"; sourceTree = "<group>"; };
+		DDC8AF381668A7A100EFEC5F /* tableViewTarget2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableViewTarget2@2x.png"; sourceTree = "<group>"; };
+		DDC8AF391668A7A100EFEC5F /* 目標完成計畫@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "目標完成計畫@2x.png"; sourceTree = "<group>"; };
+		DDC8AF401668A7A600EFEC5F /* Content3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Content3@2x.png"; sourceTree = "<group>"; };
+		DDC8AF431668A7AB00EFEC5F /* clearBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clearBtn@2x.png"; sourceTree = "<group>"; };
+		DDC8AF441668A7AB00EFEC5F /* clearBtn_includeTxt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clearBtn_includeTxt@2x.png"; sourceTree = "<group>"; };
+		DDC8AF471668A7AB00EFEC5F /* switch_inside_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch_inside_1@2x.png"; sourceTree = "<group>"; };
+		DDC8AF481668A7AB00EFEC5F /* switch_inside_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch_inside_2@2x.png"; sourceTree = "<group>"; };
+		DDC8AF491668A7AB00EFEC5F /* switchButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switchButton@2x.png"; sourceTree = "<group>"; };
+		DDC8AF4A1668A7AB00EFEC5F /* switchOutside@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switchOutside@2x.png"; sourceTree = "<group>"; };
+		DDC8AF4B1668A7AB00EFEC5F /* 否@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "否@2x.png"; sourceTree = "<group>"; };
+		DDC8AF4C1668A7AB00EFEC5F /* 是@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "是@2x.png"; sourceTree = "<group>"; };
+		DDC8AF4D1668A7AB00EFEC5F /* switchUI_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switchUI_1@2x.png"; sourceTree = "<group>"; };
+		DDC8AF4E1668A7AB00EFEC5F /* switchUI_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switchUI_2@2x.png"; sourceTree = "<group>"; };
 		DDC8AF591668A81E00EFEC5F /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank.png; sourceTree = "<group>"; };
 		DDC8AF661668B85000EFEC5F /* ExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseViewController.h; sourceTree = "<group>"; };
 		DDC8AF671668B85000EFEC5F /* ExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseViewController.m; sourceTree = "<group>"; };
@@ -295,11 +295,11 @@
 		DDC8AF341668A7A100EFEC5F /* p2_tableView */ = {
 			isa = PBXGroup;
 			children = (
-				DDC8AF351668A7A100EFEC5F /* tableViewBg.png */,
-				DDC8AF361668A7A100EFEC5F /* tableViewItem.png */,
-				DDC8AF371668A7A100EFEC5F /* tableViewTarget1.png */,
-				DDC8AF381668A7A100EFEC5F /* tableViewTarget2.png */,
-				DDC8AF391668A7A100EFEC5F /* 目標完成計畫.png */,
+				DDC8AF351668A7A100EFEC5F /* tableViewBg@2x.png */,
+				DDC8AF361668A7A100EFEC5F /* tableViewItem@2x.png */,
+				DDC8AF371668A7A100EFEC5F /* tableViewTarget1@2x.png */,
+				DDC8AF381668A7A100EFEC5F /* tableViewTarget2@2x.png */,
+				DDC8AF391668A7A100EFEC5F /* 目標完成計畫@2x.png */,
 			);
 			path = p2_tableView;
 			sourceTree = "<group>";
@@ -307,7 +307,7 @@
 		DDC8AF3F1668A7A600EFEC5F /* p3_fakePic */ = {
 			isa = PBXGroup;
 			children = (
-				DDC8AF401668A7A600EFEC5F /* Content3.png */,
+				DDC8AF401668A7A600EFEC5F /* Content3@2x.png */,
 			);
 			path = p3_fakePic;
 			sourceTree = "<group>";
@@ -315,8 +315,8 @@
 		DDC8AF421668A7AB00EFEC5F /* p4_ui */ = {
 			isa = PBXGroup;
 			children = (
-				DDC8AF431668A7AB00EFEC5F /* clearBtn.png */,
-				DDC8AF441668A7AB00EFEC5F /* clearBtn_includeTxt.png */,
+				DDC8AF431668A7AB00EFEC5F /* clearBtn@2x.png */,
+				DDC8AF441668A7AB00EFEC5F /* clearBtn_includeTxt@2x.png */,
 				DDC8AF451668A7AB00EFEC5F /* switch */,
 			);
 			path = p4_ui;
@@ -326,8 +326,8 @@
 			isa = PBXGroup;
 			children = (
 				DDC8AF461668A7AB00EFEC5F /* detail_Sep_UI */,
-				DDC8AF4D1668A7AB00EFEC5F /* switchUI_1.png */,
-				DDC8AF4E1668A7AB00EFEC5F /* switchUI_2.png */,
+				DDC8AF4D1668A7AB00EFEC5F /* switchUI_1@2x.png */,
+				DDC8AF4E1668A7AB00EFEC5F /* switchUI_2@2x.png */,
 			);
 			path = switch;
 			sourceTree = "<group>";
@@ -335,12 +335,12 @@
 		DDC8AF461668A7AB00EFEC5F /* detail_Sep_UI */ = {
 			isa = PBXGroup;
 			children = (
-				DDC8AF471668A7AB00EFEC5F /* switch_inside_1.png */,
-				DDC8AF481668A7AB00EFEC5F /* switch_inside_2.png */,
-				DDC8AF491668A7AB00EFEC5F /* switchButton.png */,
-				DDC8AF4A1668A7AB00EFEC5F /* switchOutside.png */,
-				DDC8AF4B1668A7AB00EFEC5F /* 否.png */,
-				DDC8AF4C1668A7AB00EFEC5F /* 是.png */,
+				DDC8AF471668A7AB00EFEC5F /* switch_inside_1@2x.png */,
+				DDC8AF481668A7AB00EFEC5F /* switch_inside_2@2x.png */,
+				DDC8AF491668A7AB00EFEC5F /* switchButton@2x.png */,
+				DDC8AF4A1668A7AB00EFEC5F /* switchOutside@2x.png */,
+				DDC8AF4B1668A7AB00EFEC5F /* 否@2x.png */,
+				DDC8AF4C1668A7AB00EFEC5F /* 是@2x.png */,
 			);
 			path = detail_Sep_UI;
 			sourceTree = "<group>";
@@ -435,22 +435,22 @@
 				DDC8AF301668A78F00EFEC5F /* model3@2x.png in Resources */,
 				DDC8AF311668A78F00EFEC5F /* model4@2x.png in Resources */,
 				DDC8AF321668A78F00EFEC5F /* model5@2x.png in Resources */,
-				DDC8AF3A1668A7A100EFEC5F /* tableViewBg.png in Resources */,
-				DDC8AF3B1668A7A100EFEC5F /* tableViewItem.png in Resources */,
-				DDC8AF3C1668A7A100EFEC5F /* tableViewTarget1.png in Resources */,
-				DDC8AF3D1668A7A100EFEC5F /* tableViewTarget2.png in Resources */,
-				DDC8AF3E1668A7A100EFEC5F /* 目標完成計畫.png in Resources */,
-				DDC8AF411668A7A600EFEC5F /* Content3.png in Resources */,
-				DDC8AF4F1668A7AB00EFEC5F /* clearBtn.png in Resources */,
-				DDC8AF501668A7AB00EFEC5F /* clearBtn_includeTxt.png in Resources */,
-				DDC8AF511668A7AB00EFEC5F /* switch_inside_1.png in Resources */,
-				DDC8AF521668A7AB00EFEC5F /* switch_inside_2.png in Resources */,
-				DDC8AF531668A7AB00EFEC5F /* switchButton.png in Resources */,
-				DDC8AF541668A7AB00EFEC5F /* switchOutside.png in Resources */,
-				DDC8AF551668A7AB00EFEC5F /* 否.png in Resources */,
-				DDC8AF561668A7AB00EFEC5F /* 是.png in Resources */,
-				DDC8AF571668A7AB00EFEC5F /* switchUI_1.png in Resources */,
-				DDC8AF581668A7AB00EFEC5F /* switchUI_2.png in Resources */,
+				DDC8AF3A1668A7A100EFEC5F /* tableViewBg@2x.png in Resources */,
+				DDC8AF3B1668A7A100EFEC5F /* tableViewItem@2x.png in Resources */,
+				DDC8AF3C1668A7A100EFEC5F /* tableViewTarget1@2x.png in Resources */,
+				DDC8AF3D1668A7A100EFEC5F /* tableViewTarget2@2x.png in Resources */,
+				DDC8AF3E1668A7A100EFEC5F /* 目標完成計畫@2x.png in Resources */,
+				DDC8AF411668A7A600EFEC5F /* Content3@2x.png in Resources */,
+				DDC8AF4F1668A7AB00EFEC5F /* clearBtn@2x.png in Resources */,
+				DDC8AF501668A7AB00EFEC5F /* clearBtn_includeTxt@2x.png in Resources */,
+				DDC8AF511668A7AB00EFEC5F /* switch_inside_1@2x.png in Resources */,
+				DDC8AF521668A7AB00EFEC5F /* switch_inside_2@2x.png in Resources */,
+				DDC8AF531668A7AB00EFEC5F /* switchButton@2x.png in Resources */,
+				DDC8AF541668A7AB00EFEC5F /* switchOutside@2x.png in Resources */,
+				DDC8AF551668A7AB00EFEC5F /* 否@2x.png in Resources */,
+				DDC8AF561668A7AB00EFEC5F /* 是@2x.png in Resources */,
+				DDC8AF571668A7AB00EFEC5F /* switchUI_1@2x.png in Resources */,
+				DDC8AF581668A7AB00EFEC5F /* switchUI_2@2x.png in Resources */,
 				DDC8AF5A1668A81E00EFEC5F /* blank.png in Resources */,
 				17C39C451668ADBC0065B83B /* config.json in Resources */,
 			);
