@@ -7,9 +7,10 @@
 //
 
 #import "ExerciseViewController.h"
-
-@interface ExerciseViewController ()
-
+#import "Yoga.h"
+@interface ExerciseViewController () {
+    int counter;
+}
 @end
 
 @implementation ExerciseViewController
@@ -27,6 +28,31 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    [self startExcerise:nil];
+}
+
+- (void) startExcerise: (Yoga *) yoga {
+//    counter = [yoga.minutes doubleValue] * 60;
+    counter = 75;
+    [NSTimer scheduledTimerWithTimeInterval:1
+                                     target:self
+                                   selector:@selector(countDownTimer:)
+                                   userInfo:nil
+                                    repeats:YES];
+
+}
+- (void)countDownTimer:(NSTimer *)timer
+{
+    int seconds = counter % 60;
+    int minutes = (counter / 60) % 60;
+    counter -= 1;
+//    [countdownField setIntegerValue:counter];
+    NSString *counterText = [NSString stringWithFormat:@"%02d:%02d", minutes, seconds];
+    NSLog(counterText);
+    if (counter <= 0) {
+        [timer invalidate];
+        //Exercise finished
+    }
 }
 
 - (void)didReceiveMemoryWarning

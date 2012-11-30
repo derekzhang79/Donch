@@ -10,6 +10,7 @@
 		17C39C2F1668AA0D0065B83B /* DonchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C39C2E1668AA0D0065B83B /* DonchManager.m */; };
 		17C39C331668AA1D0065B83B /* Yoga.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C39C321668AA1D0065B83B /* Yoga.m */; };
 		17C39C451668ADBC0065B83B /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = 17C39C441668ADBC0065B83B /* config.json */; };
+		17C39C5C1668BF6A0065B83B /* DCCustomAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C39C5B1668BF6A0065B83B /* DCCustomAlert.m */; };
 		DD9B40E0166891B300180646 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9B40DF166891B300180646 /* UIKit.framework */; };
 		DD9B40E2166891B300180646 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9B40E1166891B300180646 /* Foundation.framework */; };
 		DD9B40E4166891B300180646 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9B40E3166891B300180646 /* CoreGraphics.framework */; };
@@ -108,6 +109,8 @@
 		17C39C311668AA1D0065B83B /* Yoga.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Yoga.h; sourceTree = "<group>"; };
 		17C39C321668AA1D0065B83B /* Yoga.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Yoga.m; sourceTree = "<group>"; };
 		17C39C441668ADBC0065B83B /* config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
+		17C39C5A1668BF6A0065B83B /* DCCustomAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCustomAlert.h; sourceTree = "<group>"; };
+		17C39C5B1668BF6A0065B83B /* DCCustomAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCustomAlert.m; sourceTree = "<group>"; };
 		DD9B40DB166891B300180646 /* Donch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Donch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9B40DF166891B300180646 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DD9B40E1166891B300180646 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -316,6 +319,8 @@
 				DD9B41181668987F00180646 /* DCCustomNavBar.m */,
 				DD9B41441668A1A400180646 /* DCHomeTabBarController.h */,
 				DD9B41451668A1A400180646 /* DCHomeTabBarController.m */,
+				17C39C5A1668BF6A0065B83B /* DCCustomAlert.h */,
+				17C39C5B1668BF6A0065B83B /* DCCustomAlert.m */,
 			);
 			name = CustomizedUI;
 			sourceTree = "<group>";
@@ -639,6 +644,7 @@
 				DDC8AF6B1668B87A00EFEC5F /* GoalViewController.m in Sources */,
 				DDC8AF6E1668B8CA00EFEC5F /* RecordViewController.m in Sources */,
 				DDC8AF711668B8D500EFEC5F /* SettingsViewController.m in Sources */,
+				17C39C5C1668BF6A0065B83B /* DCCustomAlert.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

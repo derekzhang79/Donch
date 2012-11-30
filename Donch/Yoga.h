@@ -10,7 +10,9 @@
 
 @interface Yoga : NSObject
 
+
 @property(retain, nonatomic) NSString *name;
 @property(retain, nonatomic) NSString *imageName;
+@property(retain, nonatomic) NSNumber *minutes;
 @property BOOL status;
 @end

@@ -40,6 +40,7 @@
             Yoga *y = [Yoga new];
             y.name = [yogaData objectForKey:@"name"];
             y.imageName = [yogaData objectForKey:@"src"];
+            y.minutes = [yogaData objectForKey:@"min"];
             y.status = [[yogaData objectForKey:@"status"] boolValue];;
             NSLog(@"-%@", y);
             [yogaList addObject:y];
@@ -50,11 +51,14 @@
 
 - (NSArray *) listAllYoga {
     for (Yoga *yoga in yogaList) {
-        NSLog(@"->%@", yoga);
+        //NSLog(@"->%@", yoga);
     }
     return yogaList;
 }
 - (BOOL) cleanYogaStatus {
+    for (Yoga *yoga in yogaList) {
+        yoga.status = false;
+    }
     return true;
 }
 
