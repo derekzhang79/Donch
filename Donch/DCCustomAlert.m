@@ -9,7 +9,7 @@
 #import "DCCustomAlert.h"
 
 @implementation DCCustomAlert
-@synthesize isShown, alertView, delegate, alertTag;
+@synthesize isShown, alertView, delegate;
 
 typedef enum {
     OK,
@@ -18,38 +18,34 @@ typedef enum {
 
 - (void)willMoveToSuperview:(UIView *)newSuperview {
     self.alpha = 0;
-    self.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"alert-background"]];
     alertView.userInteractionEnabled = YES;
 }
 
 
-- (id)initWithTitle:(NSString *)title
-            message:(NSString *)message
-           delegate:(id <DCCustomAlertDelegate>)myAlertViewDelegate
-    okayButtonTitle:(NSString *)okayButtonTitle
-  cancelButtonTitle:(NSString *)cancelButtonTitle
-    alertBackground:(NSString *)alertBackground
-           alertTag:(NSString *)tag {
-    CGRect frame = CGRectMake(0,0, 640,480);
+- (id)initWIthMessageImage:(UIImage *) messageImage
+                  delegate:(id <DCCustomAlertDelegate>) alertDelegate
+           okayButtonImage:(UIImage *) okayButtonImage
+         cancelButtonTitle:(UIImage *) cancelButtonImage {
+    CGRect frame = [[UIScreen mainScreen] bounds];
     self = [super initWithFrame:frame];
-    self.delegate = myAlertViewDelegate;
-    self.alertTag = tag;
+    self.delegate = alertDelegate;
     
-    UIImage *alertBackgroundImage = [UIImage imageNamed:alertBackground];
+    UIImage *alertBackgroundImage = [UIImage imageNamed:@"dia_bg"];
     alertView = [[UIImageView alloc] initWithFrame:CGRectMake(frame.size.width/2 - alertBackgroundImage.size.width/2,
                                                               frame.size.height/2 - alertBackgroundImage.size.height/2,
                                                               alertBackgroundImage.size.width,
                                                               alertBackgroundImage.size.height)];
     alertView.image = alertBackgroundImage;
     
-    [alertView addSubview:[self getTitleLabel:title]];
-    [alertView addSubview:[self getMessageLabel:message]];
+//    [alertView addSubview:[self getTitleLabel:title]];
+
+    [alertView addSubview:     [[UIImageView alloc] initWithImage:messageImage]];
     
-    BOOL singleButton = (cancelButtonTitle == nil & okayButtonTitle != nil);
-    BOOL noButton = (cancelButtonTitle == nil & okayButtonTitle ==nil);
+    BOOL singleButton = (cancelButtonImage == nil & okayButtonImage != nil);
+    BOOL noButton = (okayButtonImage == nil & cancelButtonImage ==nil);
     
-    UIButton *okButton = [self getRightButton:okayButtonTitle];
-    UIImage *okButtonImg = [UIImage imageNamed:@"btn-yes-normal.png"];
+    UIButton *okButton = [self getRightButton:nil];
+    UIImage *okButtonImg = okayButtonImage;
     UIImage *okButtonPressedImg = [UIImage imageNamed:@"btn-yes-pressed"];
     [okButton setBackgroundImage:okButtonImg forState:UIControlStateNormal];
     [okButton setBackgroundImage:okButtonPressedImg forState:UIControlStateHighlighted];
@@ -64,8 +60,8 @@ typedef enum {
     }else if (noButton){
         // do nothing i think -elisha
     }else {
-        UIButton *cancelButton = [self getLeftButton:cancelButtonTitle];
-        UIImage *cancelButtonImg = [UIImage imageNamed:@"btn-no-normal"];
+        UIButton *cancelButton = [self getLeftButton:nil];
+        UIImage *cancelButtonImg = cancelButtonImage;
         UIImage *cancelButtonPressedImg = [UIImage imageNamed:@"btn-no-pressed"];
         [cancelButton setFrame:CGRectMake(50,
                                           alertView.frame.size.height - cancelButtonImg.size.height - 30,
@@ -90,9 +86,6 @@ typedef enum {
 #pragma mark Custom alert methods
 - (void)show
 {
-    
-    //  if (self.delegate)
-    //  [self.delegate willPresentAlertView:self];
     isShown = YES;
     [UIView beginAnimations: @"Show Alert" context:nil];
     [UIView setAnimationDelegate:self];

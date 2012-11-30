@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DCCustomAlert.h"
 
-@interface ExerciseViewController : UIViewController
+@interface ExerciseViewController : UIViewController<DCCustomAlertDelegate>
 
 @end

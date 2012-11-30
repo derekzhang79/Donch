@@ -27,13 +27,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
-    [self startExcerise:nil];
+    DCCustomAlert *customAlert = [[DCCustomAlert alloc] initWIthMessageImage:[UIImage imageNamed:@"Are_you_ready@2x"]
+                                                                    delegate:self
+                                                             okayButtonImage:[UIImage imageNamed:@"start"]
+                                                           cancelButtonTitle:nil];
+    [self.view addSubview:customAlert];
+    [customAlert show];
 }
 
 - (void) startExcerise: (Yoga *) yoga {
-//    counter = [yoga.minutes doubleValue] * 60;
-    counter = 75;
+    counter = [yoga.minutes doubleValue] * 60;
     [NSTimer scheduledTimerWithTimeInterval:1
                                      target:self
                                    selector:@selector(countDownTimer:)
@@ -61,4 +64,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark -
+#pragma mark DCCustomAlertDelegate
+- (void)alertView:(DCCustomAlert *)alertView willDismissWithButtonIndex:(NSInteger)buttonIndex {
+    [self startExcerise:nil];
+}
 @end
