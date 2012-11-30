@@ -59,6 +59,10 @@
 		DDC8AF571668A7AB00EFEC5F /* switchUI_1.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF4D1668A7AB00EFEC5F /* switchUI_1.png */; };
 		DDC8AF581668A7AB00EFEC5F /* switchUI_2.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF4E1668A7AB00EFEC5F /* switchUI_2.png */; };
 		DDC8AF5A1668A81E00EFEC5F /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC8AF591668A81E00EFEC5F /* blank.png */; };
+		DDC8AF681668B85000EFEC5F /* ExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC8AF671668B85000EFEC5F /* ExerciseViewController.m */; };
+		DDC8AF6B1668B87A00EFEC5F /* GoalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC8AF6A1668B87A00EFEC5F /* GoalViewController.m */; };
+		DDC8AF6E1668B8CA00EFEC5F /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC8AF6D1668B8CA00EFEC5F /* RecordViewController.m */; };
+		DDC8AF711668B8D500EFEC5F /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC8AF701668B8D400EFEC5F /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -122,6 +126,14 @@
 		DDC8AF4D1668A7AB00EFEC5F /* switchUI_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchUI_1.png; sourceTree = "<group>"; };
 		DDC8AF4E1668A7AB00EFEC5F /* switchUI_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchUI_2.png; sourceTree = "<group>"; };
 		DDC8AF591668A81E00EFEC5F /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank.png; sourceTree = "<group>"; };
+		DDC8AF661668B85000EFEC5F /* ExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseViewController.h; sourceTree = "<group>"; };
+		DDC8AF671668B85000EFEC5F /* ExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseViewController.m; sourceTree = "<group>"; };
+		DDC8AF691668B87A00EFEC5F /* GoalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalViewController.h; sourceTree = "<group>"; };
+		DDC8AF6A1668B87A00EFEC5F /* GoalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalViewController.m; sourceTree = "<group>"; };
+		DDC8AF6C1668B8CA00EFEC5F /* RecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordViewController.h; sourceTree = "<group>"; };
+		DDC8AF6D1668B8CA00EFEC5F /* RecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordViewController.m; sourceTree = "<group>"; };
+		DDC8AF6F1668B8D400EFEC5F /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		DDC8AF701668B8D400EFEC5F /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +198,7 @@
 		DD9B40E5166891B300180646 /* Donch */ = {
 			isa = PBXGroup;
 			children = (
+				DDC8AF651668B81500EFEC5F /* View Controllers */,
 				17C39C301668AA140065B83B /* DataModel */,
 				17C39C2B1668A9CB0065B83B /* DataController */,
 				DD9B411A1668988700180646 /* CustomizedUI */,
@@ -216,10 +229,10 @@
 		DD9B4112166897C100180646 /* Art */ = {
 			isa = PBXGroup;
 			children = (
-				DDC8AF421668A7AB00EFEC5F /* p4_ui */,
-				DDC8AF3F1668A7A600EFEC5F /* p3_fakePic */,
-				DDC8AF341668A7A100EFEC5F /* p2_tableView */,
 				DD9B4121166899CF00180646 /* p1_models_paper */,
+				DDC8AF341668A7A100EFEC5F /* p2_tableView */,
+				DDC8AF3F1668A7A600EFEC5F /* p3_fakePic */,
+				DDC8AF421668A7AB00EFEC5F /* p4_ui */,
 				DD9B4123166899CF00180646 /* TabBar */,
 				DD9B412E166899CF00180646 /* bg@2x.png */,
 				DD9B412F166899CF00180646 /* countBg@2x.png */,
@@ -332,6 +345,21 @@
 			path = detail_Sep_UI;
 			sourceTree = "<group>";
 		};
+		DDC8AF651668B81500EFEC5F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DDC8AF661668B85000EFEC5F /* ExerciseViewController.h */,
+				DDC8AF671668B85000EFEC5F /* ExerciseViewController.m */,
+				DDC8AF691668B87A00EFEC5F /* GoalViewController.h */,
+				DDC8AF6A1668B87A00EFEC5F /* GoalViewController.m */,
+				DDC8AF6C1668B8CA00EFEC5F /* RecordViewController.h */,
+				DDC8AF6D1668B8CA00EFEC5F /* RecordViewController.m */,
+				DDC8AF6F1668B8D400EFEC5F /* SettingsViewController.h */,
+				DDC8AF701668B8D400EFEC5F /* SettingsViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -441,6 +469,10 @@
 				DD9B41461668A1A400180646 /* DCHomeTabBarController.m in Sources */,
 				17C39C2F1668AA0D0065B83B /* DonchManager.m in Sources */,
 				17C39C331668AA1D0065B83B /* Yoga.m in Sources */,
+				DDC8AF681668B85000EFEC5F /* ExerciseViewController.m in Sources */,
+				DDC8AF6B1668B87A00EFEC5F /* GoalViewController.m in Sources */,
+				DDC8AF6E1668B8CA00EFEC5F /* RecordViewController.m in Sources */,
+				DDC8AF711668B8D500EFEC5F /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
