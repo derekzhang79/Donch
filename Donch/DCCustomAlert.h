@@ -15,6 +15,7 @@
 @property (nonatomic) id<DCCustomAlertDelegate> delegate;
 @property (nonatomic) BOOL isShown;
 @property (nonatomic) UIImageView *alertView;
+@property (nonatomic) NSString *alertTag;
 
 - (void)show;
 - (void)hide: (id)sender;

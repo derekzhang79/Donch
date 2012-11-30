@@ -11,4 +11,8 @@
 
 @interface ExerciseViewController : UIViewController<DCCustomAlertDelegate>
 
+@property int currentYogaIndex;
+@property (weak, nonatomic) IBOutlet UIImageView *exerciseImage;
+@property (weak, nonatomic) IBOutlet UIImageView *countImageView;
+@property (weak, nonatomic) IBOutlet UILabel *countDownLabel;
 @end
