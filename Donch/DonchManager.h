@@ -14,7 +14,7 @@
 
 - (NSArray *) listAllYoga;
 
-- (BOOL) cleanYogaStatus;
+- (BOOL) clearYogaStatus;
 
 - (BOOL) updateYogaStatusWithIndex: (NSInteger) index;
 

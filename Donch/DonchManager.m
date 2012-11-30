@@ -55,7 +55,7 @@
     }
     return yogaList;
 }
-- (BOOL) cleanYogaStatus {
+- (BOOL) clearYogaStatus {
     for (Yoga *yoga in yogaList) {
         yoga.status = false;
     }
