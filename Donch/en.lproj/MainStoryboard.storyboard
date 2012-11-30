@@ -72,7 +72,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mL-TR-Gdx">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="57" id="IlW-eP-2Ij"/>
-                                    <constraint firstAttribute="width" constant="311" id="p8J-fX-ABN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <inset key="contentEdgeInsets" minX="27" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -236,7 +235,6 @@
                             <constraint firstItem="gU5-Wy-Jsm" firstAttribute="leading" secondItem="5Ax-Ba-bsH" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="LkV-q6-ewe"/>
                             <constraint firstItem="gU5-Wy-Jsm" firstAttribute="leading" secondItem="gJM-Xf-3xm" secondAttribute="leading" type="default" id="LxD-UE-PXN"/>
                             <constraint firstItem="wpv-Fp-DEp" firstAttribute="leading" secondItem="V79-rY-8zO" secondAttribute="leading" type="default" id="Mqi-4p-RWt"/>
-                            <constraint firstItem="Wa8-X2-3ho" firstAttribute="trailing" secondItem="5De-ZO-gMK" secondAttribute="trailing" type="default" id="Npz-Kp-zcl"/>
                             <constraint firstItem="hRN-sR-G2F" firstAttribute="baseline" secondItem="4mL-TR-Gdx" secondAttribute="baseline" type="default" id="POW-QL-HIc"/>
                             <constraint firstItem="IQJ-yS-zyy" firstAttribute="leading" secondItem="5De-ZO-gMK" secondAttribute="leading" type="default" id="Shi-Yg-4Tc"/>
                             <constraint firstItem="5De-ZO-gMK" firstAttribute="centerX" secondItem="mh1-U9-hSN" secondAttribute="centerX" type="default" id="Sxc-PU-VM6"/>
@@ -245,12 +243,10 @@
                             <constraint firstItem="sN1-yF-SEI" firstAttribute="centerY" secondItem="IQJ-yS-zyy" secondAttribute="centerY" type="default" id="WKE-CX-xRu"/>
                             <constraint firstItem="oL8-WP-kB4" firstAttribute="leading" secondItem="hRN-sR-G2F" secondAttribute="leading" type="default" id="Xkn-Xx-U6i"/>
                             <constraint firstItem="wk2-Wj-JBi" firstAttribute="leading" secondItem="DZF-v2-Hda" secondAttribute="leading" type="default" id="Y3d-B6-2Jx"/>
-                            <constraint firstItem="Wa8-X2-3ho" firstAttribute="trailing" secondItem="zj2-9s-iW9" secondAttribute="trailing" type="default" id="Yac-mh-Lid"/>
                             <constraint firstAttribute="trailing" secondItem="OpO-p6-aXd" secondAttribute="trailing" constant="11" id="bMJ-I4-aHP"/>
                             <constraint firstItem="smY-M6-Omu" firstAttribute="leading" secondItem="wpv-Fp-DEp" secondAttribute="leading" type="default" id="e1K-En-UVc"/>
                             <constraint firstItem="hRN-sR-G2F" firstAttribute="centerY" secondItem="4mL-TR-Gdx" secondAttribute="centerY" type="default" id="eO3-KH-aaG"/>
                             <constraint firstItem="bLf-J4-CcD" firstAttribute="leading" secondItem="oL8-WP-kB4" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="elC-Ke-nUj"/>
-                            <constraint firstItem="IQJ-yS-zyy" firstAttribute="trailing" secondItem="5De-ZO-gMK" secondAttribute="trailing" type="default" id="fVA-fh-hdB"/>
                             <constraint firstItem="5Ax-Ba-bsH" firstAttribute="leading" secondItem="wk2-Wj-JBi" secondAttribute="leading" type="default" id="geH-5r-r4E"/>
                             <constraint firstItem="DZF-v2-Hda" firstAttribute="centerY" secondItem="lJC-wJ-Qcv" secondAttribute="centerY" type="default" id="h5b-vr-RR8"/>
                             <constraint firstItem="gJM-Xf-3xm" firstAttribute="top" secondItem="8tj-nL-72O" secondAttribute="top" constant="178" id="ivc-eV-Eyj"/>
@@ -265,7 +261,6 @@
                             <constraint firstItem="DZF-v2-Hda" firstAttribute="leading" secondItem="oL8-WP-kB4" secondAttribute="leading" type="default" id="xF6-QK-lUJ"/>
                             <constraint firstAttribute="bottom" secondItem="IQJ-yS-zyy" secondAttribute="bottom" constant="109" id="xKI-rH-1VN"/>
                             <constraint firstItem="Wa8-X2-3ho" firstAttribute="centerY" secondItem="lJC-wJ-Qcv" secondAttribute="centerY" type="default" id="y0R-H1-iNn"/>
-                            <constraint firstItem="zj2-9s-iW9" firstAttribute="trailing" secondItem="4mL-TR-Gdx" secondAttribute="trailing" type="default" id="yQM-mt-36y"/>
                             <constraint firstItem="gJM-Xf-3xm" firstAttribute="leading" secondItem="wk2-Wj-JBi" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="zTd-oa-L7B"/>
                             <constraint firstItem="OpO-p6-aXd" firstAttribute="leading" secondItem="hRN-sR-G2F" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="zYg-2v-ScY"/>
                             <constraint firstItem="mh1-U9-hSN" firstAttribute="bottom" secondItem="8tj-nL-72O" secondAttribute="bottom" type="default" id="zxT-n5-Xko"/>
@@ -581,7 +576,7 @@
         <image name="model1.png" width="316" height="381"/>
         <image name="switchUI_1.png" width="69" height="27"/>
         <image name="switchUI_2.png" width="68" height="27"/>
-        <image name="tableViewBg.png" width="16" height="16"/>
+        <image name="tableViewBg.png" width="311" height="59"/>
         <image name="tableViewItem.png" width="7" height="7"/>
         <image name="tableViewTarget1.png" width="57" height="48"/>
         <image name="tableViewTarget2.png" width="57" height="48"/>
