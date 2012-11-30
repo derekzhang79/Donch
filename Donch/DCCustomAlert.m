@@ -9,7 +9,7 @@
 #import "DCCustomAlert.h"
 
 @implementation DCCustomAlert
-@synthesize isShown, alertView, delegate;
+@synthesize isShown, alertView, delegate, alertTag;
 
 typedef enum {
     OK,
@@ -38,43 +38,38 @@ typedef enum {
     alertView.image = alertBackgroundImage;
     
 //    [alertView addSubview:[self getTitleLabel:title]];
-
-    [alertView addSubview:     [[UIImageView alloc] initWithImage:messageImage]];
+    UIImageView *messageView = [[UIImageView alloc] initWithImage:messageImage];
+    messageView.center = CGPointMake(alertView.center.x, 50);
+    [alertView addSubview: messageView];
     
     BOOL singleButton = (cancelButtonImage == nil & okayButtonImage != nil);
     BOOL noButton = (okayButtonImage == nil & cancelButtonImage ==nil);
     
-    UIButton *okButton = [self getRightButton:nil];
-    UIImage *okButtonImg = okayButtonImage;
-    UIImage *okButtonPressedImg = [UIImage imageNamed:@"btn-yes-pressed"];
-    [okButton setBackgroundImage:okButtonImg forState:UIControlStateNormal];
-    [okButton setBackgroundImage:okButtonPressedImg forState:UIControlStateHighlighted];
-    //Button Size : 153 * 56
-    
+    UIButton *okButton = [self getRightButton:@"開始"];
+    [okButton setBackgroundImage:okayButtonImage forState:UIControlStateNormal];
+
     if (singleButton) {
-        [okButton setFrame:CGRectMake(alertView.frame.size.width/2 - okButtonImg.size.width/2,
-                                      alertView.frame.size.height - okButtonImg.size.height - 30,
-                                      okButtonImg.size.width,
-                                      okButtonImg.size.height)];
+        [okButton setFrame:CGRectMake(alertView.frame.size.width/2 - okayButtonImage.size.width/2,
+                                      alertView.frame.size.height - okayButtonImage.size.height - 30,
+                                      okayButtonImage.size.width,
+                                      okayButtonImage.size.height)];
         [alertView insertSubview:okButton atIndex:0];
     }else if (noButton){
         // do nothing i think -elisha
     }else {
-        UIButton *cancelButton = [self getLeftButton:nil];
-        UIImage *cancelButtonImg = cancelButtonImage;
-        UIImage *cancelButtonPressedImg = [UIImage imageNamed:@"btn-no-pressed"];
-        [cancelButton setFrame:CGRectMake(50,
-                                          alertView.frame.size.height - cancelButtonImg.size.height - 30,
-                                          cancelButtonImg.size.width,
-                                          cancelButtonImg.size.height)];
-        [cancelButton setBackgroundImage:cancelButtonImg forState:UIControlStateNormal];
-        [cancelButton setBackgroundImage:cancelButtonPressedImg forState:UIControlStateHighlighted];
-        [okButton setFrame:CGRectMake(alertView.frame.size.width - 200,
-                                      alertView.frame.size.height - okButtonImg.size.height - 30,
-                                      okButtonImg.size.width,
-                                      okButtonImg.size.height)];
-        [alertView insertSubview:okButton atIndex:0];
-        [alertView insertSubview:cancelButton atIndex:1];
+        UIButton *hardButton = [self getLeftButton:nil];
+        [hardButton setFrame:CGRectMake(alertView.frame.size.width / 2 - 30 - cancelButtonImage.size.width,
+                                          alertView.frame.size.height - cancelButtonImage.size.height - 30,
+                                          cancelButtonImage.size.width,
+                                          cancelButtonImage.size.height)];
+        [hardButton setBackgroundImage:cancelButtonImage forState:UIControlStateNormal];
+        [okButton setFrame:CGRectMake(alertView.frame.size.width / 2 + 30,
+                                      alertView.frame.size.height - okayButtonImage.size.height - 30,
+                                      okayButtonImage.size.width,
+                                      okayButtonImage.size.height)];
+
+        [alertView insertSubview:hardButton atIndex:0];
+        [alertView insertSubview:okButton atIndex:1];
     }
     [self addSubview:alertView];
     
@@ -123,35 +118,6 @@ typedef enum {
 }
 #pragma mark -
 #pragma mark Utility Method
-//get alert message label
-- (UILabel *) getMessageLabel:(NSString *) message {
-    UILabel *messageLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 85, alertView.frame.size.width, 60)];
-    messageLabel.font = [UIFont systemFontOfSize:24];
-    CGFloat cmyka[5] = {0, 0, 0, 0.4, 1};
-    messageLabel.textColor = [DCCustomAlert getUIColorFromCMYK:cmyka];
-    messageLabel.text = message;
-    messageLabel.textAlignment = NSTextAlignmentCenter;
-    messageLabel.backgroundColor = [UIColor clearColor];
-    messageLabel.shadowColor = [UIColor whiteColor];
-    messageLabel.shadowOffset = CGSizeMake(0,1);
-    messageLabel.numberOfLines = 0;
-    messageLabel.lineBreakMode = NSLineBreakByWordWrapping;
-    return messageLabel;
-}
-
-//Get alert title label
-- (UILabel *) getTitleLabel:(NSString *) title {
-    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 25, alertView.frame.size.width, 40)];
-    titleLabel.font = [UIFont systemFontOfSize:30];
-    CGFloat cmyka[5] = {0, 0, 0, 0.7, 1};
-    titleLabel.textColor = [DCCustomAlert getUIColorFromCMYK:cmyka];
-    titleLabel.text = title;
-    titleLabel.textAlignment = NSTextAlignmentCenter;
-    titleLabel.backgroundColor = [UIColor clearColor];
-    titleLabel.shadowColor = [UIColor whiteColor];
-    titleLabel.shadowOffset = CGSizeMake(0,1);
-    return titleLabel;
-}
 //Get alert right button
 - (UIButton *) getRightButton:(NSString *) title {
     //Button Title Color
