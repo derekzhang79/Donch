@@ -42,7 +42,7 @@
             y.imageName = [yogaData objectForKey:@"src"];
             y.minutes = [yogaData objectForKey:@"min"];
             y.status = [[yogaData objectForKey:@"status"] boolValue];;
-            NSLog(@"-%@", y);
+            //NSLog(@"-%@", y);
             [yogaList addObject:y];
         }
     }

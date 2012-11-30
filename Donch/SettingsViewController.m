@@ -18,13 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    UIImage *switchImageGreen = [UIImage imageNamed:@"switchUI_1"];
-    self.testswitch.onImage = switchImageGreen;
-    [self.testswitch addTarget:self action:@selector(switchToggled:) forControlEvents:UIControlEventValueChanged];
-    
-    [self.switch01 setBackgroundImage:switchImageGreen forState:UIControlStateNormal];
-    
-}      
+}
 
 - (IBAction)clearAllRecord:(UIButton *)sender
 {
@@ -34,30 +28,16 @@
 
 - (IBAction)switchClicked:(UIButton *)sender
 {
-    UIImage *switchImageGreen = [UIImage imageNamed:@"switchUI_1"];
-    UIImage *switchImageRed = [UIImage imageNamed:@"switchUI_2"];
-    
-    if([@"switchUI_1" isEqual:self.switch01.currentImage]){
+    UIImage *switchImageGreen = [UIImage imageNamed: @"switchUI_1"];
+    UIImage *switchImageRed = [UIImage imageNamed: @"switchUI_2"];
+    if (sender.tag == 0){
+        sender.tag = 1;
         [sender setImage:switchImageRed forState:UIControlStateNormal];
-    }else{
+    } else {
+        sender.tag = 0;
         [sender setImage:switchImageGreen forState:UIControlStateNormal];
-
     }
-}
-
-- (void)switchToggled:(id)sender
-{
-    UIImage *switchImageGreen = [UIImage imageNamed:@"switchUI_1"];
-    UIImage *switchImageRed = [UIImage imageNamed:@"switchUI_2"];
     
-	if(self.testswitch.on=YES){
-        [self.testswitch setOffImage:switchImageRed];
-        [self.testswitch setOn:NO animated:YES];
-    }else if (self.testswitch.on=NO){
-        [self.testswitch setOffImage:switchImageGreen];
-        [self.testswitch setOn:YES animated:YES];
-    }
 }
-
 
 @end

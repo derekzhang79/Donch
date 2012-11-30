@@ -11,6 +11,8 @@
 #import "Yoga.h"
 @interface ExerciseViewController () {
     int counter;
+    BOOL doingExercise;
+    DCCustomAlert *customAlert;
 }
 @end
 
@@ -20,13 +22,28 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(prepareExercise)];
+    [exerciseImage addGestureRecognizer:tap];
+    UISwipeGestureRecognizer *swipeGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self
+                                                                                                 action:@selector(switchViews)];
+    swipeGestureRecognizer.direction = UISwipeGestureRecognizerDirectionLeft;
+    [exerciseImage addGestureRecognizer:swipeGestureRecognizer];
     currentYogaIndex = 0;
+
+    
+}
+- (void)viewWillAppear:(BOOL)animated {
     Yoga *currentYoga = [self getYogaWithIndex:currentYogaIndex];
     exerciseImage.image = [UIImage imageNamed:currentYoga.imageName];
-    [self prepareExercise];
+
+}
+- (void) switchViews {
+    
 }
 - (void) prepareExercise {
-    DCCustomAlert *customAlert = [[DCCustomAlert alloc] initWIthMessageImage:[UIImage imageNamed:@"Are_you_ready"]
+    if (doingExercise == true)
+        return;
+    customAlert = [[DCCustomAlert alloc] initWIthMessageImage:[UIImage imageNamed:@"Are_you_ready"]
                                                                     delegate:self
                                                              okayButtonImage:[UIImage imageNamed:@"btn_start"]
                                                            cancelButtonTitle:nil];
@@ -35,8 +52,10 @@
     [customAlert show];
 }
 - (void) startExcerise: (Yoga *) yoga {
+
     counter = [yoga.minutes doubleValue] * 60;
     counter = 3;
+    doingExercise = true;
     [NSTimer scheduledTimerWithTimeInterval:1
                                      target:self
                                    selector:@selector(countDownTimer:)
@@ -51,9 +70,11 @@
     counter -= 1;
     NSString *counterText = [NSString stringWithFormat:@"%02d:%02d\"", minutes, seconds];
     countDownLabel.text = counterText;
+
     if (counter < 0) {
+        doingExercise = false;
         [timer invalidate];
-        DCCustomAlert *customAlert = [[DCCustomAlert alloc] initWIthMessageImage:[UIImage imageNamed:@"Is_this_ok"]
+        customAlert = [[DCCustomAlert alloc] initWIthMessageImage:[UIImage imageNamed:@"Is_this_ok"]
                                                                         delegate:self
                                                                  okayButtonImage:[UIImage imageNamed: @"btn_ok"]
                                                                cancelButtonTitle:[UIImage imageNamed: @"btn_hard"]];
@@ -71,6 +92,8 @@
     if ([tag isEqualToString:@"startAlert"]) {
         [self startExcerise: [self getYogaWithIndex:currentYogaIndex]];
     } else if ([tag isEqualToString:@"continueAlert"] && buttonIndex == 1) { // Press OK
+        [[DonchManager getInstance] updateYogaStatusWithIndex:currentYogaIndex];
+        
         UIImageView *lastModel = [[UIImageView alloc] initWithImage:exerciseImage.image];
         currentYogaIndex = currentYogaIndex + 1;
         Yoga *currentYoga = [self getYogaWithIndex:currentYogaIndex];

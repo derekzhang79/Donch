@@ -10,10 +10,8 @@
 
 @interface SettingsViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIButton *switch01;
-
-- (IBAction)clearAllRecord:(UIButton *)sender;
-- (IBAction)switchClicked:(UIButton *)sender;
+- (IBAction)clearAllRecord: (UIButton *)sender;
+- (IBAction)switchClicked: (UIButton *)sender;
 
 @property (weak, nonatomic) IBOutlet UISwitch *testswitch;
 

@@ -21,6 +21,7 @@
     NSArray *views = [self.view subviews];
     UIView *UITransitionView = [views objectAtIndex:0];
     UITransitionView.frame = CGRectMake(0, 0, 320, 435);
+    self.delegate = self;
     
     // Customize UITabBar
     UITabBar *tabBar = self.tabBar;
@@ -30,7 +31,7 @@
     tabBar.frame = CGRectMake(0, 430, 320, 44);
     tabBar.backgroundImage = bg;
     tabBar.selectionIndicatorImage = blank;
-//    [self tabBar:self.tabBarController.tabBar didSelectItem:self.tabBarItem];
+    // [self tabBar:self.tabBarController.tabBar didSelectItem:self.tabBarItem];
     
     // Customize UITabBarItem
     UIImage *exerciseSelected= [UIImage imageNamed:@"b1_click"];
@@ -59,6 +60,8 @@
 {
     UIView * fromView = tabBarController.selectedViewController.view;
     UIView * toView = viewController.view;
+    if (fromView == toView)
+        return false;
     NSInteger controllerIndex = [tabBarController.viewControllers indexOfObject:viewController];
     [UIView transitionFromView:fromView
                         toView:toView
