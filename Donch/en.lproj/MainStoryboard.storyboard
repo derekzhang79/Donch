@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="eg1-ch-EeX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C3006" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="eg1-ch-EeX">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
@@ -13,12 +13,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="eRh-fA-YNh" userLabel="bg"/>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="model1.png" translatesAutoresizingMaskIntoConstraints="NO" id="mHW-1A-3Jh"/>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="countBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="0KL-55-u8p"/>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1:32&quot;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cY1-YW-sDg">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="model1.png" translatesAutoresizingMaskIntoConstraints="NO" id="mHW-1A-3Jh">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="42" id="dS1-eE-Dhl"/>
+                                    <constraint firstAttribute="height" constant="400" id="bvS-wV-uEQ"/>
                                 </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="countBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="0KL-55-u8p"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="00:00&quot;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cY1-YW-sDg">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -26,19 +27,25 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="cY1-YW-sDg" firstAttribute="centerX" secondItem="eRh-fA-YNh" secondAttribute="centerX" type="default" id="0nc-F6-iOv"/>
                             <constraint firstItem="eRh-fA-YNh" firstAttribute="leading" secondItem="16" secondAttribute="leading" type="default" id="1Rs-b7-oLZ"/>
-                            <constraint firstAttribute="bottom" secondItem="cY1-YW-sDg" secondAttribute="bottom" constant="5" id="AK9-KK-odP"/>
-                            <constraint firstItem="0KL-55-u8p" firstAttribute="top" secondItem="16" secondAttribute="top" constant="334" id="Dsz-WR-Zc7"/>
-                            <constraint firstItem="mHW-1A-3Jh" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="-1" id="JqC-He-dIf"/>
+                            <constraint firstItem="mHW-1A-3Jh" firstAttribute="top" secondItem="16" secondAttribute="top" type="default" id="20g-iS-S1d"/>
+                            <constraint firstItem="cY1-YW-sDg" firstAttribute="centerY" secondItem="0KL-55-u8p" secondAttribute="centerY" type="default" id="LJa-C8-5Hg"/>
+                            <constraint firstItem="mHW-1A-3Jh" firstAttribute="leading" secondItem="16" secondAttribute="leading" type="default" id="N2O-b9-8Pb"/>
+                            <constraint firstItem="mHW-1A-3Jh" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="Pov-99-q8X"/>
                             <constraint firstItem="eRh-fA-YNh" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="ZKY-Nm-awm"/>
                             <constraint firstItem="eRh-fA-YNh" firstAttribute="top" secondItem="16" secondAttribute="top" type="default" id="eR8-ik-BIv"/>
-                            <constraint firstItem="mHW-1A-3Jh" firstAttribute="bottom" secondItem="16" secondAttribute="bottom" type="default" id="sXB-sT-9dO"/>
-                            <constraint firstItem="cY1-YW-sDg" firstAttribute="centerX" secondItem="mHW-1A-3Jh" secondAttribute="centerX" type="default" id="sfx-N6-Lho"/>
-                            <constraint firstItem="0KL-55-u8p" firstAttribute="centerX" secondItem="eRh-fA-YNh" secondAttribute="centerX" type="default" id="uhv-DV-VjF"/>
+                            <constraint firstItem="cY1-YW-sDg" firstAttribute="centerX" secondItem="0KL-55-u8p" secondAttribute="centerX" type="default" id="eeE-oD-C98"/>
+                            <constraint firstItem="0KL-55-u8p" firstAttribute="top" secondItem="16" secondAttribute="top" constant="333" id="s1j-c9-OUa"/>
                             <constraint firstItem="eRh-fA-YNh" firstAttribute="bottom" secondItem="16" secondAttribute="bottom" type="default" id="zcf-3x-Zy1"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="運動" image="b1.png" id="7"/>
+                    <connections>
+                        <outlet property="countDownLabel" destination="cY1-YW-sDg" id="51n-Hd-K1I"/>
+                        <outlet property="countImageView" destination="0KL-55-u8p" id="8y5-e8-oXf"/>
+                        <outlet property="exerciseImage" destination="mHW-1A-3Jh" id="MpV-3M-aSW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
@@ -561,7 +568,7 @@
         <image name="bg@2x.png" width="640" height="960"/>
         <image name="clearBtn.png" width="311" height="59"/>
         <image name="countBg.png" width="163" height="69"/>
-        <image name="model1.png" width="320" height="400"/>
+        <image name="model1.png" width="316" height="381"/>
         <image name="switchUI_1.png" width="69" height="27"/>
         <image name="tableViewBg.png" width="311" height="59"/>
         <image name="tableViewItem.png" width="7" height="7"/>
