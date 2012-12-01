@@ -2,13 +2,13 @@
     "sampleYoga": [{
                    "name": "武士式",
                    "src": "model1",
-                   "min" : 2,
-                   "status": 1
+                   "min" : 1.5,
+                   "status": 0
                    }, {
                    "name": "樹姿式",
                    "src": "model2",
                    "min" : 3,
-                   "status": 0
+                   "status": 1
                    }, {
                    "name": "半月式",
                    "src": "model3",
@@ -18,11 +18,11 @@
                    "name": "拱月式",
                    "src": "model4",
                    "min" : 2.5,
-                   "status": 0
+                   "status": 1
                    }, {
                    "name": "拜日式",
                    "src": "model5",
                    "min" : 2,
-                   "status": 1
+                   "status": 0
                    }]
 }

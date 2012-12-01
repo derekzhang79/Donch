@@ -54,7 +54,6 @@
 - (void) startExcerise: (Yoga *) yoga {
 
     counter = [yoga.minutes doubleValue] * 60;
-    counter = 3;
     doingExercise = true;
     [NSTimer scheduledTimerWithTimeInterval:1
                                      target:self
