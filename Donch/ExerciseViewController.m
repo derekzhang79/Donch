@@ -68,6 +68,7 @@
 - (void) startExcerise: (Yoga *) yoga {
 
     counter = [yoga.minutes doubleValue] * 60;
+    counter = 3;
     doingExercise = true;
     [NSTimer scheduledTimerWithTimeInterval:1
                                      target:self
@@ -105,11 +106,12 @@
     if ([tag isEqualToString:@"startAlert"]) {
         [self startExcerise: [self getYogaWithIndex:currentYogaIndex]];
     } else if ([tag isEqualToString:@"continueAlert"] && buttonIndex == 1) { // Press OK
-        [[DonchManager getInstance] updateYogaStatusWithIndex:currentYogaIndex];
-        
+        DonchManager *mgr = [DonchManager getInstance];
+        [mgr updateYogaStatusWithIndex:currentYogaIndex];
+        NSArray *arrayList = [mgr listAllYoga];
         UIImageView *lastModel = [[UIImageView alloc] initWithImage:exerciseImage.image];
-        currentYogaIndex = currentYogaIndex + 1;
-        Yoga *currentYoga = [self getYogaWithIndex:currentYogaIndex];
+        currentYogaIndex = currentYogaIndex == ([arrayList count] - 1) ? currentYogaIndex : currentYogaIndex + 1;
+        Yoga *currentYoga = [self getYogaWithIndex: currentYogaIndex];
         if (currentYoga == nil)
             return;
         exerciseImage.image = [UIImage imageNamed:currentYoga.imageName];
