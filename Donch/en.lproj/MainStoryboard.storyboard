@@ -14,6 +14,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg.png" id="eRh-fA-YNh" userLabel="bg">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="387"/>
+                                <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView contentMode="scaleToFill" image="model1.png" id="mHW-1A-3Jh">
                                 <rect key="frame" x="3" y="3.5" width="316" height="381"/>
@@ -220,9 +221,10 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg.png" id="HU2-ds-wml">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="387"/>
+                                <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Content3.png" id="DNl-sc-YzP">
-                                <rect key="frame" x="3" y="3.5" width="316" height="381"/>
+                                <rect key="frame" x="3" y="3" width="316" height="381"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>
@@ -244,6 +246,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg.png" id="Kvv-0S-cOS">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="387"/>
+                                <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MJW-j1-Jt4">
                                 <rect key="frame" x="5" y="34" width="311" height="59"/>
