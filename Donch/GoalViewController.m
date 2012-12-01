@@ -37,10 +37,17 @@
 
 }
 - (IBAction)selectExercise:(UIButton *)sender {
-    ExerciseViewController *evc = [self.tabBarController.viewControllers objectAtIndex:0];
-    evc.currentYogaIndex = sender.tag - 1;
-    [self.tabBarController setSelectedIndex:0];
-
+    NSArray *viewControllerArray =  [self.tabBarController viewControllers];
+    for (UINavigationController *uiNaviController in viewControllerArray) {
+        UIViewController *tabController = [[uiNaviController viewControllers] objectAtIndex:0];
+        if ([tabController isKindOfClass:[ExerciseViewController class]]) {
+            ExerciseViewController *exerciseController = (ExerciseViewController *) tabController;
+            exerciseController.currentYogaIndex = sender.tag - 1;
+            [self.tabBarController setSelectedIndex:[viewControllerArray indexOfObject:uiNaviController]];
+        }
+        
+            
+    }
 }
 - (UIImageView *) getYogaStatusImage: (NSInteger) tag {
     return (UIImageView *) [self.view viewWithTag:(tag + 10)];

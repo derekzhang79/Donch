@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="eg1-ch-EeX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
@@ -9,20 +9,21 @@
             <objects>
                 <viewController title="First" id="2" customClass="ExerciseViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="16">
-                        <rect key="frame" x="0.0" y="44" width="320" height="387"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg.png" id="eRh-fA-YNh" userLabel="bg">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="387"/>
                             </imageView>
                             <imageView contentMode="scaleToFill" image="model1.png" id="mHW-1A-3Jh">
-                                <rect key="frame" x="3" y="4" width="316" height="381"/>
+                                <rect key="frame" x="3" y="3.5" width="316" height="381"/>
+                                <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="countBg.png" id="0KL-55-u8p">
-                                <rect key="frame" x="79" y="334" width="163" height="69"/>
+                                <rect key="frame" x="79" y="313" width="163" height="69"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="00:00&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cY1-YW-sDg">
-                                <rect key="frame" x="123" y="358" width="74" height="21"/>
+                                <rect key="frame" x="123" y="338" width="74" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -30,7 +31,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="運動" image="b1.png" id="7"/>
+                    <navigationItem key="navigationItem" id="m2z-nD-OSs"/>
                     <connections>
                         <outlet property="countDownLabel" destination="cY1-YW-sDg" id="G5E-4u-0iE"/>
                         <outlet property="countImageView" destination="0KL-55-u8p" id="47K-YR-GBq"/>
@@ -39,14 +40,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="653" y="-138"/>
+            <point key="canvasLocation" x="1179" y="-138"/>
         </scene>
         <!--Goal View Controller - Second-->
         <scene sceneID="13">
             <objects>
                 <viewController autoresizesArchivedViewToFullSize="NO" title="Second" id="3" customClass="GoalViewController" sceneMemberID="viewController">
                     <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="8tj-nL-72O">
-                        <rect key="frame" x="0.0" y="44" width="320" height="387"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" image="bg.png" id="mh1-U9-hSN">
@@ -196,7 +197,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="1" title="紀錄" image="b2.png" id="6"/>
+                    <navigationItem key="navigationItem" id="KFx-LK-mFF"/>
                     <connections>
                         <outlet property="button1" destination="4mL-TR-Gdx" id="qwL-z1-ucY"/>
                         <outlet property="button2" destination="zj2-9s-iW9" id="UD7-tF-GO4"/>
@@ -207,44 +208,45 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="653" y="498"/>
+            <point key="canvasLocation" x="1179" y="498"/>
         </scene>
-        <!--Record View Controller - 目標-->
+        <!--Record View Controller-->
         <scene sceneID="6p3-Nk-o1K">
             <objects>
                 <viewController id="JXC-AI-CrR" customClass="RecordViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lqM-a9-sbU">
-                        <rect key="frame" x="0.0" y="44" width="320" height="387"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg.png" id="HU2-ds-wml">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="387"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Content3.png" id="DNl-sc-YzP">
-                                <rect key="frame" x="3" y="4" width="316" height="381"/>
+                                <rect key="frame" x="3" y="3.5" width="316" height="381"/>
+                                <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="2" title="目標" image="b3.png" id="yim-6u-XYH"/>
+                    <navigationItem key="navigationItem" id="S1D-KO-tfR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MbM-de-KZz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="659" y="1188"/>
+            <point key="canvasLocation" x="1185" y="1188"/>
         </scene>
-        <!--Settings View Controller - 設定-->
+        <!--Settings View Controller-->
         <scene sceneID="ORe-uG-LL8">
             <objects>
                 <viewController id="RNC-qT-yzd" customClass="SettingsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ERy-2p-mTf">
-                        <rect key="frame" x="0.0" y="44" width="320" height="387"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg.png" id="Kvv-0S-cOS">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="387"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MJW-j1-Jt4">
-                                <rect key="frame" x="5" y="37" width="311" height="59"/>
+                                <rect key="frame" x="5" y="34" width="311" height="59"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="清除所有記錄" backgroundImage="clearBtn.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -271,7 +273,7 @@
                                 </state>
                             </button>
                             <imageView userInteractionEnabled="NO" tag="25" contentMode="scaleToFill" image="tableViewItem.png" id="ZWd-Hc-OIX">
-                                <rect key="frame" x="20" y="120" width="7" height="7"/>
+                                <rect key="frame" x="20" y="113" width="7" height="7"/>
                             </imageView>
                             <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MI2-22-e1S">
                                 <rect key="frame" x="10" y="155" width="300" height="49"/>
@@ -287,7 +289,7 @@
                                 </state>
                             </button>
                             <imageView userInteractionEnabled="NO" tag="25" contentMode="scaleToFill" image="tableViewItem.png" id="pUV-Xl-vzA">
-                                <rect key="frame" x="20" y="175" width="7" height="7"/>
+                                <rect key="frame" x="20" y="165" width="7" height="7"/>
                             </imageView>
                             <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="axG-iG-haK">
                                 <rect key="frame" x="10" y="211" width="300" height="49"/>
@@ -303,7 +305,7 @@
                                 </state>
                             </button>
                             <imageView userInteractionEnabled="NO" tag="25" contentMode="scaleToFill" image="tableViewItem.png" id="VSs-Cu-Beu">
-                                <rect key="frame" x="20" y="231" width="7" height="7"/>
+                                <rect key="frame" x="20" y="218" width="7" height="7"/>
                             </imageView>
                             <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="W6S-o5-TpM">
                                 <rect key="frame" x="10" y="267" width="300" height="49"/>
@@ -319,7 +321,7 @@
                                 </state>
                             </button>
                             <imageView userInteractionEnabled="NO" tag="25" contentMode="scaleToFill" image="tableViewItem.png" id="ZuE-XX-pHj">
-                                <rect key="frame" x="20" y="287" width="7" height="7"/>
+                                <rect key="frame" x="20" y="272" width="7" height="7"/>
                             </imageView>
                             <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7IM-hj-wcA">
                                 <rect key="frame" x="10" y="323" width="300" height="49"/>
@@ -335,10 +337,10 @@
                                 </state>
                             </button>
                             <imageView userInteractionEnabled="NO" tag="25" contentMode="scaleToFill" image="tableViewItem.png" id="Byw-hR-W4b">
-                                <rect key="frame" x="20" y="344" width="7" height="6"/>
+                                <rect key="frame" x="20" y="326" width="7" height="6"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="W0s-u2-krN">
-                                <rect key="frame" x="232" y="110" width="68" height="26"/>
+                                <rect key="frame" x="232" y="104" width="68" height="26"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" backgroundImage="switchUI_1.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -352,7 +354,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Njf-Kn-nUt">
-                                <rect key="frame" x="232" y="166" width="68" height="26"/>
+                                <rect key="frame" x="232" y="156" width="68" height="26"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Button" image="switchUI_2.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -366,7 +368,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lfX-wa-ieW">
-                                <rect key="frame" x="232" y="222" width="68" height="26"/>
+                                <rect key="frame" x="232" y="209" width="68" height="26"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Button" image="switchUI_1.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -380,7 +382,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sha-sV-wGL">
-                                <rect key="frame" x="232" y="278" width="68" height="26"/>
+                                <rect key="frame" x="232" y="262" width="68" height="26"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Button" image="switchUI_1.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -395,7 +397,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rVp-aD-IMM">
-                                <rect key="frame" x="232" y="334" width="68" height="26"/>
+                                <rect key="frame" x="232" y="315" width="68" height="26"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Button" image="switchUI_1.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -409,7 +411,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="進階設定" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kfN-eG-Yvd">
-                                <rect key="frame" x="17" y="6" width="68" height="21"/>
+                                <rect key="frame" x="17" y="5" width="68" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -417,11 +419,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="3" title="設定" image="b4.png" id="c1a-Xi-XzE"/>
+                    <navigationItem key="navigationItem" id="foL-gL-LhE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lnt-Cs-Gmq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="659" y="1888"/>
+            <point key="canvasLocation" x="1185" y="1888"/>
         </scene>
         <!--Home Tab Bar Controller-->
         <scene sceneID="15">
@@ -435,31 +437,91 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="2" kind="relationship" relationship="viewControllers" id="26"/>
-                        <segue destination="3" kind="relationship" relationship="viewControllers" id="27"/>
-                        <segue destination="JXC-AI-CrR" kind="relationship" relationship="viewControllers" id="zns-LZ-R5C"/>
-                        <segue destination="RNC-qT-yzd" kind="relationship" relationship="viewControllers" id="iab-Ch-LVg"/>
+                        <segue destination="tc6-Ez-Bjk" kind="relationship" relationship="viewControllers" id="26"/>
+                        <segue destination="9BQ-Sh-EDl" kind="relationship" relationship="viewControllers" id="27"/>
+                        <segue destination="E03-Ep-OVY" kind="relationship" relationship="viewControllers" id="zns-LZ-R5C"/>
+                        <segue destination="Uwr-W7-vy0" kind="relationship" relationship="viewControllers" id="iab-Ch-LVg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-74" y="602"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="h01-As-DXO">
+        <!--Navigation Controller - 運動-->
+        <scene sceneID="r7N-O4-Q8U">
             <objects>
-                <navigationController definesPresentationContext="YES" id="eg1-ch-EeX" sceneMemberID="viewController">
-                    <nil key="simulatedStatusBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4te-Hn-ZgY" customClass="DCCustomNavBar">
+                <navigationController id="tc6-Ez-Bjk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="運動" image="b1.png" id="7"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OSL-Hs-0HM" customClass="DCCustomNavBar">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="4" kind="relationship" relationship="rootViewController" id="bbx-f2-0Lk"/>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="iRd-IS-6jg"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Luf-sv-7wr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DLc-fB-p83" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-538" y="589"/>
+            <point key="canvasLocation" x="653" y="-138"/>
+        </scene>
+        <!--Navigation Controller - 紀錄-->
+        <scene sceneID="oCo-eV-Lwz">
+            <objects>
+                <navigationController id="9BQ-Sh-EDl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="1" title="紀錄" image="b2.png" id="6"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KfF-CQ-QVA" customClass="DCCustomNavBar">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3" kind="relationship" relationship="rootViewController" id="thw-e6-MGk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XbJ-80-Mpm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="498"/>
+        </scene>
+        <!--Navigation Controller - 目標-->
+        <scene sceneID="boa-QH-hnz">
+            <objects>
+                <navigationController id="E03-Ep-OVY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="2" title="目標" image="b3.png" id="yim-6u-XYH"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RFh-Xj-e1G" customClass="DCCustomNavBar">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JXC-AI-CrR" kind="relationship" relationship="rootViewController" id="ggJ-yN-E8q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hgX-ei-wEh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="659" y="1188"/>
+        </scene>
+        <!--Navigation Controller - 設定-->
+        <scene sceneID="eki-ED-hc1">
+            <objects>
+                <navigationController id="Uwr-W7-vy0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="3" title="設定" image="b4.png" id="c1a-Xi-XzE"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SXi-rE-UFO" customClass="DCCustomNavBar">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RNC-qT-yzd" kind="relationship" relationship="rootViewController" id="Wxg-Db-MJf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NgL-8g-ySp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="659" y="1888"/>
         </scene>
     </scenes>
     <resources>

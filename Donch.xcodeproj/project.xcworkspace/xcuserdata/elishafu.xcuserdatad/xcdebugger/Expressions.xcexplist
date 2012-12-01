@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[GoalViewController selectExercise:]:GoalViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.tabBarController.viewControllers">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
