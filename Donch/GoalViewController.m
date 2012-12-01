@@ -31,7 +31,7 @@
         [yogaButton setTitle:yoga.name forState:UIControlStateNormal];
         yogaButton.userInteractionEnabled = !yoga.status;
         [[self getYogaTimeLabel:tag] setText: [NSString stringWithFormat:@"%.1f min", [yoga.minutes doubleValue]]];
-        [self getYogaLight:tag].image = [UIImage imageNamed: yoga.status ? @"tableViewItem": @"tableViewItem2"];
+        [self getYogaBullet:tag].image = [UIImage imageNamed: yoga.status ? @"tableViewItem": @"tableViewItem2"];
         [self getYogaStatusImage:tag].image = [UIImage imageNamed: yoga.status ? @"tableViewTarget1": @"tableViewTarget2"];
     }
 
@@ -45,7 +45,7 @@
 - (UIImageView *) getYogaStatusImage: (NSInteger) tag {
     return (UIImageView *) [self.view viewWithTag:(tag + 10)];
 }
-- (UIImageView *) getYogaLight: (NSInteger) tag {
+- (UIImageView *) getYogaBullet: (NSInteger) tag {
     return (UIImageView *) [self.view viewWithTag:(tag + 20)];
 }
 - (UILabel *) getYogaTimeLabel: (NSInteger) tag {
