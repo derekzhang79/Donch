@@ -24,10 +24,15 @@
     [super viewDidLoad];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(prepareExercise)];
     [exerciseImage addGestureRecognizer:tap];
-    UISwipeGestureRecognizer *swipeGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self
-                                                                                                 action:@selector(switchViews)];
-    swipeGestureRecognizer.direction = UISwipeGestureRecognizerDirectionLeft;
-    [exerciseImage addGestureRecognizer:swipeGestureRecognizer];
+    UISwipeGestureRecognizer *swipeGestureLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self
+                                                                                                 action:@selector(switchLeft)];
+    UISwipeGestureRecognizer *swipeGestureRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self
+                                                                                                 action:@selector(switchRight)];
+
+    swipeGestureLeft.direction = UISwipeGestureRecognizerDirectionLeft;
+    swipeGestureRight.direction = UISwipeGestureRecognizerDirectionRight;
+    [exerciseImage addGestureRecognizer:swipeGestureLeft];
+    [exerciseImage addGestureRecognizer:swipeGestureRight];
     currentYogaIndex = 0;
 
     
@@ -37,8 +42,17 @@
     exerciseImage.image = [UIImage imageNamed:currentYoga.imageName];
 
 }
-- (void) switchViews {
-    
+- (void) switchLeft {
+    currentYogaIndex++;
+    Yoga *currentYoga = [self getYogaWithIndex:currentYogaIndex];
+    if (currentYoga != nil)
+        exerciseImage.image = [UIImage imageNamed:currentYoga.imageName];
+}
+- (void) switchRight {
+    currentYogaIndex--;
+    Yoga *currentYoga = [self getYogaWithIndex:currentYogaIndex];
+    if (currentYoga != nil)
+        exerciseImage.image = [UIImage imageNamed:currentYoga.imageName];
 }
 - (void) prepareExercise {
     if (doingExercise == true)
@@ -114,7 +128,7 @@
 }
 - (Yoga *) getYogaWithIndex: (int) index {
     NSArray *yogalist = [[DonchManager getInstance] listAllYoga];
-    if (index == [yogalist count]){
+    if (index < 0 || index == [yogalist count]){
         return nil;
     } else {
         return [yogalist objectAtIndex:index] ;
